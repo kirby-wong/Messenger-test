@@ -7,15 +7,20 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Your customer chat code -->
 <div class="fb-customerchat"
-  attribution=install_email
-  page_id="216488612634447">
+  attribution=setup_tool
+  page_id="216488612634447"
+  theme_color="#fa3c4c">
 </div>
+
+
+
+
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
 
