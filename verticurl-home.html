@@ -51,7 +51,22 @@ jQuery(window).on('load',  function() {
 </head>
 
 <body>
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="216488612634447"
+  theme_color="#fa3c4c">
+</div>
 
 <div class="t3-wrapper"> <!-- Need this wrapper for off-canvas menu. Remove if you don't use of-canvas -->
 
@@ -527,5 +542,15 @@ var url 	= location.href;
 
  });
 </script>
-<!--googleoff: all--><div class="cadre_alert_cookies" id="cadre_alert_cookies" style="opacity:1;text-align:center;position:fixed;z-index:10000;left: 0;right: 0;bottom: 0; margin:0px;"><div class="cadre_inner_alert_cookies" style="display: inline-block;width: 100%;margin:auto;max-width:100%;background-color: #cdcdcd;border: 0px solid #eeeeee;"><div class="cadre_inner_texte_alert_cookies" style="display: inline-block;padding:5px 0 0 0;color: #000000"><div class="cadre_texte pull-left"><p>By using this website you agree to use of our cookies. <a href="/privacy-policy">Read Verticurl's cookie policy</a>.</p></div><div class="cadre_bouton pull-left"><div class="pull-left  col-sm-6 btn_close" style="margin:0;text-align:center"></div></div></div></div><button onclick="CloseCadreAlertCookie();" style="color:#eeeeee; position: absolute; right: 3%; text-decoration: none;text-shadow: rgb(34, 44, 48) 0px 1px 0px;top:5px;" class="btn btn-inverse btn-large popup-modal-dismiss">X</button></div><!--googleon: all--><script type="text/javascript">/*<![CDATA[*/var name = "fmalertcookies" + "=";var ca = document.cookie.split(";");var acceptCookie = false;for(var i=0; i<ca.length; i++) {var c = ca[i];while (c.charAt(0)==" ") c = c.substring(1);if (c.indexOf(name) == 0){ acceptCookie = true; document.getElementById("cadre_alert_cookies").style.display="none";}}var d = new Date();d.setTime(d.getTime() + (15*(24*60*60*1000)));var expires_cookie = "expires="+d.toUTCString();function CloseCadreAlertCookie(){document.getElementById('cadre_alert_cookies').style.display='none'; document.cookie='fmalertcookies=true; '+expires_cookie+'; path=/';}/*]]>*/</script></body>
+<!--googleoff: all--><div class="cadre_alert_cookies" id="cadre_alert_cookies" style="opacity:1;text-align:center;position:fixed;z-index:10000;left: 0;right: 0;bottom: 0; margin:0px;"><div class="cadre_inner_alert_cookies" style="display: inline-block;width: 100%;margin:auto;max-width:100%;background-color: #cdcdcd;border: 0px solid #eeeeee;"><div class="cadre_inner_texte_alert_cookies" style="display: inline-block;padding:5px 0 0 0;color: #000000"><div class="cadre_texte pull-left"><p>By using this website you agree to use of our cookies. <a href="/privacy-policy">Read Verticurl's cookie policy</a>.</p></div><div class="cadre_bouton pull-left"><div class="pull-left  col-sm-6 btn_close" style="margin:0;text-align:center"></div></div></div></div><button onclick="CloseCadreAlertCookie();" style="color:#eeeeee; position: absolute; right: 3%; text-decoration: none;text-shadow: rgb(34, 44, 48) 0px 1px 0px;top:5px;" class="btn btn-inverse btn-large popup-modal-dismiss">X</button></div><!--googleon: all--><script type="text/javascript">/*<![CDATA[*/var name = "fmalertcookies" + "=";var ca = document.cookie.split(";");var acceptCookie = false;for(var i=0; i<ca.length; i++) {var c = ca[i];while (c.charAt(0)==" ") c = c.substring(1);if (c.indexOf(name) == 0){ acceptCookie = true; document.getElementById("cadre_alert_cookies").style.display="none";}}var d = new Date();d.setTime(d.getTime() + (15*(24*60*60*1000)));var expires_cookie = "expires="+d.toUTCString();function CloseCadreAlertCookie(){document.getElementById('cadre_alert_cookies').style.display='none'; document.cookie='fmalertcookies=true; '+expires_cookie+'; path=/';}/*]]>*/</script>
+
+
+<!-- Message us -->
+<div class="fb-messengermessageus" 
+  messenger_app_id="230562804525096" 
+  page_id="216488612634447"
+  color="blue"
+  size="xlarge">
+</div>
+</body>
 </html>
